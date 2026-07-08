@@ -40,3 +40,42 @@ console.log(a ** b);   // Exponentiation
 let count = 0;
 count++;   // count is now 1
 count--;   // count is now 0
+// Exercise 2: String Operations
+let firstName = "Gilbert";
+let lastName = "Mungai";
+
+// Concatenation
+let fullName = firstName + " " + lastName;
+
+// Template literals (preferred)
+let greeting = `Hello, ${firstName}!`;
+let message = `Your name has ${firstName.length} characters.`;
+
+// String methods
+console.log(fullName.toUpperCase());
+console.log(fullName.toLowerCase());
+console.log(firstName.charAt(0));
+console.log(fullName.includes("Gilbert"));
+
+// Exercise 3: Comparison & Logical Operators
+// Comparison
+console.log(5 > 3);    // true
+console.log(5 < 3);    // false
+console.log(5 === 5);  // true (strict equality)
+console.log(5 == "5"); // true (loose equality - avoid!)
+console.log(5 !== 3);  // true
+
+// Logical
+console.log(true && true);   // AND
+console.log(true || false);  // OR
+console.log(!true);          // NOT
+
+// Challenge: Calculate age in different units
+let userAge = 18; 
+let ageInDays = userAge * 365;
+let ageInHours = ageInDays * 24;
+let yearTurn100 = 2026 + (100 - userAge);
+
+console.log(`Age in days: ${ageInDays}`);
+console.log(`Age in hours: ${ageInHours}`);
+console.log(`You'll turn 100 in the year: ${yearTurn100}`);

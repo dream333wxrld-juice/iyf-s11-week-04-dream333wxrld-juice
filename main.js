@@ -78,4 +78,31 @@ let yearTurn100 = 2026 + (100 - userAge);
 
 console.log(`Age in days: ${ageInDays}`);
 console.log(`Age in hours: ${ageInHours}`);
-console.log(`You'll turn 100 in the year: ${yearTurn100}`);
+console.log(`You'll turn 100 in the year: ${yearTurn100}`);// Task 7.3: Functions - Exercise 1
+
+// Function declaration
+function greet(name) {
+    return `Hello, ${name}!`;
+}
+
+// Function expression
+const add = function(a, b) {
+    return a + b;
+};
+
+// Arrow function
+const multiply = (a, b) => a * b;
+
+// Arrow function with body
+const divide = (a, b) => {
+    if (b === 0) {
+        return "Cannot divide by zero";
+    }
+    return a / b;
+};
+
+// Test
+console.log(greet("Gilbert"));
+console.log(add(10, 5));
+console.log(multiply(4, 3));
+console.log(divide(10, 2));

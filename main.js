@@ -153,3 +153,25 @@ function calculateTip(bill, tipPercent = 15) {
 console.log(calculateTip(100));      // 15
 console.log(calculateTip(100, 20));  // 20
 console.log(calculateTip(50, 10));   // 5
+// Task 7.4: Control Flow - Exercise 1: If/Else Statements
+
+function getGrade(score) {
+    if (score >= 90) {
+        return "A";
+    } else if (score >= 80) {
+        return "B";
+    } else if (score >= 70) {
+        return "C";
+    } else if (score >= 60) {
+        return "D";
+    } else {
+        return "F";
+    }
+}
+
+// Test
+console.log(getGrade(95));  // A
+console.log(getGrade(85));  // B
+console.log(getGrade(75));  // C
+console.log(getGrade(65));  // D
+console.log(getGrade(50));  // F

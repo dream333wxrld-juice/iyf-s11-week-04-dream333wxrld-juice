@@ -203,3 +203,63 @@ console.log(getDayName(0));  // Sunday
 console.log(getDayName(1));  // Monday
 console.log(getDayName(3));  // Wednesday
 console.log(getDayName(7));  // Invalid day
+// Task 7.4: Control Flow - Exercise 3: Loops
+
+// For loop
+for (let i = 0; i < 5; i++) {
+    console.log(i);
+}
+
+// While loop
+let count = 0;
+while (count < 5) {
+    console.log(count);
+    count++;
+}
+
+// For...of (arrays)
+const colors = ["red", "green", "blue"];
+for (const color of colors) {
+    console.log(color);
+}
+
+// Build: 1. Print numbers 1-100
+function printNumbers1to100() {
+    for (let i = 1; i <= 100; i++) {
+        console.log(i);
+    }
+}
+
+// Build: 2. Print only even numbers 1-50
+function printEvenNumbers() {
+    for (let i = 1; i <= 50; i++) {
+        if (i % 2 === 0) {
+            console.log(i);
+        }
+    }
+}
+
+// Build: 3. FizzBuzz
+function fizzBuzz() {
+    for (let i = 1; i <= 100; i++) {
+        if (i % 3 === 0 && i % 5 === 0) {
+            console.log("FizzBuzz");
+        } else if (i % 3 === 0) {
+            console.log("Fizz");
+        } else if (i % 5 === 0) {
+            console.log("Buzz");
+        } else {
+            console.log(i);
+        }
+    }
+}
+
+// Build: 4. Print a triangle of stars
+function printTriangle(rows = 5) {
+    for (let i = 1; i <= rows; i++) {
+        console.log("*".repeat(i));
+    }
+}
+
+// Test the build programs
+printTriangle(5);

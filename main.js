@@ -106,3 +106,32 @@ console.log(greet("Gilbert"));
 console.log(add(10, 5));
 console.log(multiply(4, 3));
 console.log(divide(10, 2));
+// Task 7.3: Functions - Exercise 2
+
+function calculateArea(width, height) {
+    return width * height;
+}
+
+function celsiusToFahrenheit(celsius) {
+    return (celsius * 9/5) + 32;
+}
+
+function isEven(number) {
+    return number % 2 === 0;
+}
+
+function getInitials(fullName) {
+    let names = fullName.split(" ");
+    return names[0].charAt(0) + names[1].charAt(0);
+}
+
+function reverseString(str) {
+    return str.split("").reverse().join("");
+}
+
+// Test
+console.log(calculateArea(10, 5));           // 50
+console.log(celsiusToFahrenheit(0));         // 32
+console.log(isEven(4));                      // true
+console.log(getInitials("Gilbert Mungai"));  // GM
+console.log(reverseString("hello"));         // olleh

@@ -135,3 +135,21 @@ console.log(celsiusToFahrenheit(0));         // 32
 console.log(isEven(4));                      // true
 console.log(getInitials("Gilbert Mungai"));  // GM
 console.log(reverseString("hello"));         // olleh
+// Task 7.3: Functions - Exercise 3: Default Parameters
+
+function greetWithDefault(name = "Guest", greeting = "Hello") {
+    return `${greeting}, ${name}!`;
+}
+
+console.log(greetWithDefault());              // Hello, Guest!
+console.log(greetWithDefault("Alice"));       // Hello, Alice!
+console.log(greetWithDefault("Bob", "Hi"));   // Hi, Bob!
+
+// Challenge: Tip Calculator
+function calculateTip(bill, tipPercent = 15) {
+    return bill * (tipPercent / 100);
+}
+
+console.log(calculateTip(100));      // 15
+console.log(calculateTip(100, 20));  // 20
+console.log(calculateTip(50, 10));   // 5

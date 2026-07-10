@@ -263,3 +263,24 @@ function printTriangle(rows = 5) {
 
 // Test the build programs
 printTriangle(5);
+// Task 8.1: Arrays - Exercise 1: Array Basics
+
+// Creating arrays
+const fruits = ["apple", "banana", "orange"];
+const numbers = [1, 2, 3, 4, 5];
+const mixed = ["hello", 42, true, null];
+
+// Accessing elements
+console.log(fruits[0]);      // apple
+console.log(fruits.length);  // 3
+
+// Modifying arrays
+fruits.push("grape");        // Add to end
+fruits.unshift("mango");     // Add to start
+fruits.pop();                // Remove from end
+fruits.shift();              // Remove from start
+
+// Test
+console.log(fruits);         // ["mango", "apple", "banana", "orange"]
+console.log(numbers);        // [1, 2, 3, 4, 5]
+console.log(mixed);          // ["hello", 42, true, null]

@@ -357,3 +357,18 @@ delete person.isStudent;                 // Remove property
 console.log(person);
 console.log(person.firstName);           // Gilbert
 console.log(person.address.country);     // Kenya
+// Task 8.2: Objects - Exercise 2: Object Methods
+
+const calculator = {
+    add: function(a, b) {
+        return a + b;
+    },
+    subtract(a, b) {
+        return a - b;
+    },
+    multiply: (a, b) => a * b
+};
+
+console.log(calculator.add(5, 3));       // 8
+console.log(calculator.subtract(10, 4)); // 6
+console.log(calculator.multiply(4, 2));  // 8

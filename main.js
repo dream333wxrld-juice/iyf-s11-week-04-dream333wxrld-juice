@@ -328,3 +328,32 @@ console.log(firstGreater10);  // 15
 // 4. Calculate product of all numbers
 const product = numbers.reduce((total, num) => total * num, 1);
 console.log(product);  // 120
+// Task 8.2: Objects - Exercise 1: Object Basics
+
+// Creating objects
+const person = {
+    firstName: "Gilbert",
+    lastName: "Mungai",
+    age: 18,
+    isStudent: true,
+    hobbies: ["reading", "coding", "gaming"],
+    address: {
+        city: "Nairobi",
+        country: "Kenya"
+    }
+};
+
+// Accessing properties
+console.log(person.firstName);           // Dot notation
+console.log(person["lastName"]);         // Bracket notation
+console.log(person.address.city);        // Nested
+
+// Modifying properties
+person.age = 18;
+person.email = "dream333wxrld@gmail.com";    // Add new property
+delete person.isStudent;                 // Remove property
+
+// Test
+console.log(person);
+console.log(person.firstName);           // Gilbert
+console.log(person.address.country);     // Kenya

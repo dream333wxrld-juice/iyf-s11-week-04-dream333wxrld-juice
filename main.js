@@ -284,3 +284,47 @@ fruits.shift();              // Remove from start
 console.log(fruits);         // ["mango", "apple", "banana", "orange"]
 console.log(numbers);        // [1, 2, 3, 4, 5]
 console.log(mixed);          // ["hello", 42, true, null]
+// Task 8.1: Arrays - Exercise 2: Array Methods
+
+const numbers = [1, 2, 3, 4, 5];
+
+// forEach - do something with each element
+numbers.forEach(num => console.log(num * 2));
+
+// map - transform each element
+const doubled = numbers.map(num => num * 2);
+console.log(doubled);  // [2, 4, 6, 8, 10]
+
+// filter - keep elements that pass a test
+const evenNumbers = numbers.filter(num => num % 2 === 0);
+console.log(evenNumbers);  // [2, 4]
+
+// find - get first element that passes test
+const firstEven = numbers.find(num => num % 2 === 0);
+console.log(firstEven);  // 2
+
+// reduce - combine all elements
+const sum = numbers.reduce((total, num) => total + num, 0);
+console.log(sum);  // 15
+
+// includes - check if element exists
+console.log(numbers.includes(3));  // true
+
+// Build challenges
+// 1. Double all numbers
+const buildDoubled = numbers.map(num => num * 2);
+console.log(buildDoubled);  // [2, 4, 6, 8, 10]
+
+// 2. Filter out negative numbers
+const mixedNumbers = [1, -2, 3, -4, 5];
+const positiveOnly = mixedNumbers.filter(num => num > 0);
+console.log(positiveOnly);  // [1, 3, 5]
+
+// 3. Find first number greater than 10
+const largeNumbers = [5, 8, 15, 3, 20];
+const firstGreater10 = largeNumbers.find(num => num > 10);
+console.log(firstGreater10);  // 15
+
+// 4. Calculate product of all numbers
+const product = numbers.reduce((total, num) => total * num, 1);
+console.log(product);  // 120

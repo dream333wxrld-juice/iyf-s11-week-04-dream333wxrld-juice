@@ -372,3 +372,24 @@ const calculator = {
 console.log(calculator.add(5, 3));       // 8
 console.log(calculator.subtract(10, 4)); // 6
 console.log(calculator.multiply(4, 2));  // 8
+// Task 8.2: Objects - Exercise 3: Object Iteration
+
+const scores = {
+    math: 95,
+    english: 88,
+    science: 92
+};
+
+// Get keys
+console.log(Object.keys(scores));        // ["math", "english", "science"]
+
+// Get values
+console.log(Object.values(scores));      // [95, 88, 92]
+
+// Get entries
+console.log(Object.entries(scores));     // [["math", 95], ["english", 88], ...]
+
+// Loop through
+for (const [subject, score] of Object.entries(scores)) {
+    console.log(`${subject}: ${score}`);
+}
